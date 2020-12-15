@@ -9,3 +9,7 @@ pip3 install -r requirements.txt
 ```
 https://www.kaggle.com/deadskull7/fer2013
 ```
+
+### Model training
+
+![Mutiface](src/plot.png)
