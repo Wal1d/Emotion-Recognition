@@ -12,6 +12,8 @@ https://www.kaggle.com/deadskull7/fer2013
 
 ### Model training
 
+All results below are done in 50 epochs
+
 #### Best Model 
 ![Mutiface](imgs/5thModel.png)
 
@@ -39,7 +41,7 @@ https://www.kaggle.com/deadskull7/fer2013
 
 ![Mutiface](imgs/5thModel.png)
 
-#### 5th Model 
+#### 6th Model 
 
 ```
 model.add(Conv2D(64, kernel_size=(3, 3), activation='relu', input_shape=(48,48,1)))
@@ -70,5 +72,49 @@ model.add(Dropout(0.2))
 
 model.add(Dense(7, activation='softmax'))
 ```
-6thModel.png
 ![Mutiface](imgs/6thModel.png)
+
+
+#### 7th Model
+
+```
+model.add(Conv2D(64, (3, 3), padding='same', input_shape=(48, 48,1)))
+model.add(BatchNormalization())
+model.add(Activation('relu'))
+model.add(MaxPooling2D(pool_size=(2,2)))
+model.add(Dropout(0.25))
+
+model.add(Conv2D(128, (5, 5), padding='same'))
+model.add(BatchNormalization())
+model.add(Activation('relu'))
+model.add(MaxPooling2D(pool_size=(2,2)))
+model.add(Dropout(0.25))
+
+model.add(Conv2D(512, (3,3), padding='same'))
+model.add(BatchNormalization())
+model.add(Activation('relu'))
+model.add(MaxPooling2D(pool_size=(2,2)))
+model.add(Dropout(0.25))
+
+model.add(Conv2D(512, (3,3), padding='same'))
+model.add(BatchNormalization())
+model.add(Activation('relu'))
+model.add(MaxPooling2D(pool_size=(2,2)))
+model.add(Dropout(0.25))
+
+model.add(Flatten())
+model.add(Dense(256))
+model.add(BatchNormalization())
+model.add(Activation('relu'))
+model.add(Dropout(0.25))
+
+model.add(Dense(512))
+model.add(BatchNormalization())
+model.add(Activation('relu'))
+model.add(Dropout(0.25))
+
+model.add(Dense(7, activation='softmax'))
+
+```
+
+![Mutiface](imgs/7thModel.png)
