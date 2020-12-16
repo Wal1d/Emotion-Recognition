@@ -12,11 +12,11 @@ https://www.kaggle.com/deadskull7/fer2013
 
 #### Emotions Distribution
 
-![Mutiface]("imgs/Emotions Distribution (7 emotions).png")
+![Mutiface]("imgs/EmotionsDistribution(6emotions).png")
 
 After dropping emotion 1
 
-![Mutiface]("imgs/Emotions Distribution (6 emotions).png")
+![Mutiface]("imgs/EmotionsDistribution(6emotions).png")
 
 ### Model training
 
