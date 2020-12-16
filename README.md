@@ -10,6 +10,14 @@ pip3 install -r requirements.txt
 https://www.kaggle.com/deadskull7/fer2013
 ```
 
+#### Emotions Distribution
+
+![Mutiface](imgs/Emotions Distribution (7 emotions).png)
+
+After dropping emotion 1
+
+![Mutiface](imgs/Emotions Distribution (6 emotions).png)
+
 ### Model training
 
 All results below are done in 50 epochs
