@@ -41,6 +41,12 @@ All results below are done in 50 epochs
 
 ![Mutiface](imgs/5thModel.png)
 
+
+Version 2: With 6 emotion: 
+
+
+![Mutiface](imgs/5thModel-v2.png)
+
 #### 6th Model 
 
 ```
