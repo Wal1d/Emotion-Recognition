@@ -118,3 +118,8 @@ model.add(Dense(7, activation='softmax'))
 ```
 
 ![Mutiface](imgs/7thModel.png)
+
+After removing an emotion
+
+![Mutiface](imgs/7thModel-2.png)
+
